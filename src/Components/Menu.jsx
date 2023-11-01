@@ -1,61 +1,59 @@
-import { useState } from 'react';
-import style from './Menu.module.scss';
 
-function Menu() {
+import './Menu.module.scss'
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-    const [burgerMenu, setBurgerMenu] = useState('bar unclicked');
-    const [menuClass, setMenuClass] = useState('menu hidden');
-    const [isMenuClicked, setIsMenuClicked] = useState(false);
+const SlideInMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const updateMenu = () => {
-        if (!isMenuClicked) {
-            setBurgerMenu('bar clicked');
-            setMenuClass('menu visible');
-        } else {
-            setBurgerMenu('bar unclicked')
-            setMenuClass('menu hidden')
-        }
-    }
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
-    return ( 
-        <>
-            <section className={style.menu}>
-                <nav className={style.menu__nav}>
-                    <article className={style.menu__burger}>
-                        <section className={style.menu__burgerLine} onClick={updateMenu}></section>
-                        <section className={style.menu__burgerLine} onClick={updateMenu}></section>
-                        <section className={style.menu__burgerLine} onClick={updateMenu}></section>
-                    </article>
-                </nav>
+  return (
+    <div className="menu-container">
+      <button className="toggle-button" onClick={toggleMenu}>
+        X
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            // className="menu"
+            // initial={{ x: '-100%' }}
+            // animate={{ x: 0 }}
+            // exit={{ x: '-100%' }}
+          >
+            <motion.ul>
+              <motion.li
+                initial={{ x: -150 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.5, delay: 0 }}
+                exit={{ x: -150 }}
+              >
+                Start
+              </motion.li>
+              <motion.li
+                initial={{ x: -150 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                exit={{ x: -150 }}
+              >
+                Our rides
+              </motion.li>
+              <motion.li
+                initial={{ x: -150 }}
+                animate={{ x: 0 }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                exit={{ x: -150 }}
+              >
+                Our games
+              </motion.li>
+            </motion.ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
-                <section className={style.menu__class}></section>
-
-            </section>
-        </> 
-
-
-
-
-
-
-
-
-
-
-    // <>
-    //     <label className={style.menu}>
-    //         <input type="checkbox"/>
-    //     </label>
-    //     <aside className={style.menu__sidebar}>
-    //         <nav>
-    //             <section>Home</section>
-    //             <section>Rides</section>
-    //             <section>Games</section>
-    //             <section>Tickets</section>
-    //         </nav>
-    //     </aside>
-    // </> 
-    );
-}
-
-export default Menu;
+export default SlideInMenu;

@@ -1,4 +1,5 @@
 import style from './Header.module.scss';
+import Menu from './Menu';
 import TitleSpan from './TitleSpan';
 
 function Header() {
@@ -15,6 +16,7 @@ function Header() {
                     )
                 })}
             </section>
+                <Menu />
         </header>
     )
 }

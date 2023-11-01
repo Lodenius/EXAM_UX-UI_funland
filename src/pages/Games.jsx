@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Header from "../Components/Header";
 import InfoCard from "../Components/InfoCard";
 import style from './Games.module.scss';
