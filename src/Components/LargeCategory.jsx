@@ -8,7 +8,7 @@ function LargeCategory() {
         <>
             <main className={style.category}>
                 <article className={style.category__container}>
-                    <h2>Rides!</h2>
+                    <h2>Rides</h2>
                     <section className={style.category__animation}>
                         <Ride />
                     </section>
@@ -17,7 +17,7 @@ function LargeCategory() {
                     </NavLink> 
                 </article>
                 <article className={style.category__container}>
-                    <h2>Games!</h2>
+                    <h2>Games</h2>
                     <section className={style.category__animation}>
                         <Bounce />
                     </section>

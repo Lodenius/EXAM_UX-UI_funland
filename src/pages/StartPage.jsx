@@ -6,6 +6,7 @@ function StartPage() {
     return (
         <>        
             <Header />
+            <h2>Welcome to funland!</h2>
             <LargeCategory />
         </>
     )

@@ -15,8 +15,7 @@ const Menu = () => {
       <section className={style.menu__toggleButton} onClick={toggleMenu}>
         <motion.div
             initial={{ rotate: 0, y: 0, x: 0 }}
-            animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? "10px" : "0px", x: isOpen ? "-4px" : "0px" }}
-            transition={{ duration: 0.3 }}
+            animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? "10px" : "0px", x: isOpen ? "-4px" : "0px"}}
         ></motion.div>
         <motion.div
           initial={{ opacity: 1 }}
@@ -25,8 +24,7 @@ const Menu = () => {
         ></motion.div>
         <motion.div
             initial={{ rotate: 0, y: 0, x: 0 }}
-            animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? "-7px" : "0px", x: isOpen ? "-3px" : "0px" }}
-
+            animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? "-8px" : "0px", x: isOpen ? "-3px" : "0px" }}
             transition={{ duration: 0.3 }}
         ></motion.div>
       </section>
@@ -41,7 +39,7 @@ const Menu = () => {
                   transition={{ duration: 0.5, delay: 0 }}
                   exit={{ x: -150 }}
                 >
-                  Start
+                   Start
                 </motion.li>
               </NavLink>
               <NavLink to='/rides'>

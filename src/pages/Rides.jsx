@@ -13,6 +13,7 @@ function Rides() {
     return (
         <>        
             <Header />
+            <h2>Our fun rides </h2>
             <main>
                 <InfoCard 
                     title="Death Swing"

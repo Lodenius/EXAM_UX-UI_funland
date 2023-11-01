@@ -13,8 +13,8 @@
             justify-content: space-evenly;
         } 
         div {
-            width: 1.7rem;
-            height: .2rem;
+            width: 2.5rem;
+            height: .3rem;
             border-radius: 10px;
             background-color: $red;
         }
@@ -22,7 +22,7 @@
             list-style: none;
             padding: 0;
             li {
-                color: $red;
+                color: black;
                 padding-top: 10px;
                 font-size: 20px;
                 @include textFont;

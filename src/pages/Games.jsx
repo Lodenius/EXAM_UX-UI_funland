@@ -13,6 +13,7 @@ function Games() {
     return (
         <>        
             <Header />
+            <h2> Our fun games </h2>
             <main>
                 <InfoCard 
                     title="Old-ball-roll"

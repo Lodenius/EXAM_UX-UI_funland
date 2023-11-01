@@ -12,7 +12,7 @@
     h2 {
         @include Headline;
         color: $blue;
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 2rem;
     }
     &__text {
@@ -22,10 +22,8 @@
         @include textFont;
     }
     &__image {
-        width: 35%;
+        width: 30%;
         height: 15rem;
-        border: 1px solid $blue;
-        border-radius: 4px;
     }
    
 }
@@ -39,15 +37,15 @@
       @include darkShadow;
     }
     25% {
-      transform: rotateZ(-.3deg);
+      transform: rotateZ(-.2deg);
       @include darkShadow;
     }
     50% {
-      transform: rotateZ(.3deg);
+      transform: rotateZ(.2deg);
       @include darkShadow;
     }
     75% {
-      transform: rotateZ(-.3deg);
+      transform: rotateZ(-.2deg);
       @include darkShadow;
     }
     100% {
