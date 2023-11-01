@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+$pink: #FEB2B4;
+$lightPink: #feb2b555;
+$blue: #AEC7DC;
+$red: #C9696C;
+
+
+@mixin Headline {
+    font-family: 'Pacifico';
+}
+
+@mixin darkShadow {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.298);
+}
+
+@mixin lightShadow {
+    box-shadow: 0 0 8px 1px $pink;
+}

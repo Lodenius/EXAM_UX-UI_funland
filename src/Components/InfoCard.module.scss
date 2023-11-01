@@ -1,0 +1,61 @@
+@import "../variables";
+
+.info {
+    width: 80vw;
+    height: 18rem;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: 1rem;
+    h2 {
+        @include Headline;
+        color: $blue;
+        font-size: 50px;
+        margin-bottom: 2rem;
+    }
+    &__text {
+        width: 50%;
+        height: 15rem;
+        text-align: center;
+    }
+    &__animation {
+        width: 35%;
+        height: 15rem;
+        border: 1px solid $blue;
+        border-radius: 4px;
+    }
+   
+}
+
+.info:hover {
+    animation: hoverEffect .75s ease 1 forwards;
+}
+
+@keyframes hoverEffect {
+    0% {
+      background-color: $red;
+      @include darkShadow;
+    }
+    25% {
+      transform: rotateZ(-.3deg);
+      background-color: $red;
+      @include darkShadow;
+    }
+    50% {
+      transform: rotateZ(.3deg);
+      background-color: $red;
+      @include darkShadow;
+    }
+    75% {
+      transform: rotateZ(-.3deg);
+      background-color: $red;
+      @include darkShadow;
+    }
+    100% {
+      transform: rotateZ(0);
+      background-color: $red;
+      @include darkShadow;
+    }
+  }
