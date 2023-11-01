@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.category {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 29rem;
+        width: 25rem;
+        border: 1px solid $red;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+    h2 {
+        @include Headline;
+        color: $blue;
+        font-size: 50px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    button {
+        border: none;
+        padding: 1rem;
+        background-color: $blue;
+        font-size: large;
+        font-weight: bold;
+        color: white;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+    button:hover {
+        color: $red;
+        font-style: italic;
+        cursor: pointer;
+        @include lightShadow;
+    }
+}

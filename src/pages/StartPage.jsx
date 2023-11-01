@@ -1,5 +1,6 @@
 import Header from "../Components/Header";
 import LargeCategory from "../Components/LargeCategory";
+import style from './Styling/StartPage.module.scss';
 
 function StartPage() {
 

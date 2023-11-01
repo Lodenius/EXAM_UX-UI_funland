@@ -1,9 +1,9 @@
 import Header from "../Components/Header";
 import InfoCard from "../Components/InfoCard";
-import skeeball from '../assets/skeeball.jpg'
-import whack from '../assets/woody.jpg'
-import canAlley from '../assets/can-alley.jpg'
-import style from './Games.module.scss';
+import skeeball from '../assets/games/skeeball.jpg'
+import whack from '../assets/games/woody.jpg'
+import canAlley from '../assets/games/can-alley.jpg'
+import style from './Styling/Games.module.scss';
 
 function Games() {
     const aboutGameOne = "It might look simple - but it's definitely harder than you think. The different holes give different amounts of points and here you really need to have a sense of the ball to get high scores. The maximum score for this game has never been reached yet - maybe you can be the first?"

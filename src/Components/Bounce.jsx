@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import style from './Bounce.module.scss';
+import style from './Styling/Bounce.module.scss';
 
 function Bounce() {
   return (

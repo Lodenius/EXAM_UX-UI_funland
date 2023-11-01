@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../../variables";
 
 .menu {
     position: relative;
@@ -17,14 +17,16 @@
             height: .3rem;
             border-radius: 10px;
             background-color: $red;
+            margin-bottom: .5rem;
         }
         ul {
             list-style: none;
             padding: 0;
             li {
                 color: black;
-                padding-top: 10px;
+                padding-top: 8px;
                 font-size: 20px;
+                font-weight: 600;
                 @include textFont;
                 letter-spacing: 1px;
             }

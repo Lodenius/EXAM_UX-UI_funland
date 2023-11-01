@@ -1,4 +1,4 @@
-import style from './Ride.module.scss';
+import style from './Styling/Ride.module.scss';
 import { motion } from 'framer-motion';
 
 function Ride() {

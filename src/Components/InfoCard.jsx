@@ -1,4 +1,4 @@
-import style from './InfoCard.module.scss'
+import style from './Styling/InfoCard.module.scss'
 
 function InfoCard({title, infoText, isReversed, url }) {
   return (

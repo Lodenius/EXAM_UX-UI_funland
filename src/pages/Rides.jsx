@@ -1,9 +1,9 @@
 import Header from "../Components/Header";
 import InfoCard from "../Components/InfoCard";
-import eclipse from '../assets/eclipse.jpg'
-import kvasten from '../assets/kvasten.jpeg'
-import monster from '../assets/monster.jpg'
-import style from './Rides.module.scss';
+import eclipse from '../assets/rides/eclipse.jpg'
+import kvasten from '../assets/rides/kvasten.jpeg'
+import monster from '../assets/rides/monster.jpg'
+import style from './Styling/Rides.module.scss';
 
 function Rides() {
     const aboutRideOne = "At 121 meters, Eclipse is one of the world's tallest swings. With a magical force of attraction, it lifts up all those afraid of heights and swings them around at 70 km per hour high in the air. 910 tons of steel and concrete, 80,000 bolts, 8 meter long chains and a breathtaking view of Stockholm make Eclipse a sky-rocketing adventure."

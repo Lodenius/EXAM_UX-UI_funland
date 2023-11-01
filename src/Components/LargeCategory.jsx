@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import Bounce from './Bounce';
-import style from './LargeCategory.module.scss'
+import style from './Styling/LargeCategory.module.scss'
 import Ride from './Ride';
 
 function LargeCategory() {
@@ -25,7 +25,6 @@ function LargeCategory() {
                         <button>See all games</button>
                     </NavLink>
                 </article>
-                
             </main>
         </>
      );

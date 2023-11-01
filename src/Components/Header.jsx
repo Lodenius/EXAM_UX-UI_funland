@@ -1,4 +1,4 @@
-import style from './Header.module.scss';
+import style from './Styling/Header.module.scss';
 import Menu from './Menu';
 import TitleSpan from './TitleSpan';
 
