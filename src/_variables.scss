@@ -10,6 +10,10 @@ $red: #C9696C;
     font-family: 'Pacifico';
 }
 
+@mixin textFont {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 @mixin darkShadow {
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.298);
 }

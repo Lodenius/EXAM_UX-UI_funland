@@ -1,28 +1,35 @@
 import Header from "../Components/Header";
 import InfoCard from "../Components/InfoCard";
+import skeeball from '../assets/skeeball.jpg'
+import whack from '../assets/woody.jpg'
+import canAlley from '../assets/can-alley.jpg'
 import style from './Games.module.scss';
 
 function Games() {
-    const aboutGameOne = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    const aboutGameTwo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    const aboutGameThree = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    const aboutGameOne = "It might look simple - but it's definitely harder than you think. The different holes give different amounts of points and here you really need to have a sense of the ball to get high scores. The maximum score for this game has never been reached yet - maybe you can be the first?"
+    const aboutGameTwo = "Hit on stumps emerging from holes with a mallet. Watch out, it goes faster and faster. Excellent for those of you who have aggressions that you want to get rid of! Here, it is important to be fast at first, then precise and strong!"
+    const aboutGameThree = "Scoop as many balls as possible into the bins. Time is running out, the lids are opened and closed at different rates. It's good if you're fast and fairly accurate. A plus if you have big hands!"
 
     return (
         <>        
             <Header />
             <main>
                 <InfoCard 
-                title="Game One"
-                infoText={aboutGameOne}/>
-
+                    title="Old-ball-roll"
+                    infoText={aboutGameOne}
+                    url={<img className={style.image} src={skeeball}></img>}
+                />
                 <InfoCard 
-                title="Game Two"
-                infoText={aboutGameTwo}
-                isReversed={true}/>
-                
+                    title="Kill-the-rodent"
+                    infoText={aboutGameTwo}
+                    url={<img className={style.image} src={whack}></img>}
+                    isReversed={true}
+                />
                 <InfoCard 
-                title="Game Three"
-                infoText={aboutGameThree}/>
+                    title="Feed the trash can"
+                    infoText={aboutGameThree}
+                    url={<img className={style.image} src={canAlley}></img>}
+                />
             </main>
         </>
     )

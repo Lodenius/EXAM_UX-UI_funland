@@ -14,20 +14,21 @@ const Menu = () => {
     <section className={style.menu}>
       <section className={style.menu__toggleButton} onClick={toggleMenu}>
         <motion.div
-          initial={{ rotate: 0 }}
-          animate={{ rotate: isOpen ? 45 : 0 }}
-          transition={{ duration: 0.3 }}
-        />
+            initial={{ rotate: 0, y: 0, x: 0 }}
+            animate={{ rotate: isOpen ? 45 : 0, y: isOpen ? "10px" : "0px", x: isOpen ? "-4px" : "0px" }}
+            transition={{ duration: 0.3 }}
+        ></motion.div>
         <motion.div
           initial={{ opacity: 1 }}
           animate={{ opacity: isOpen ? 0 : 1 }}
           transition={{ duration: 0.3 }}
-        />
+        ></motion.div>
         <motion.div
-          initial={{ rotate: 0 }}
-          animate={{ rotate: isOpen ? -45 : 0 }}
-          transition={{ duration: 0.3 }}
-        />
+            initial={{ rotate: 0, y: 0, x: 0 }}
+            animate={{ rotate: isOpen ? -45 : 0, y: isOpen ? "-7px" : "0px", x: isOpen ? "-3px" : "0px" }}
+
+            transition={{ duration: 0.3 }}
+        ></motion.div>
       </section>
       <AnimatePresence>
         {isOpen && (
@@ -72,3 +73,4 @@ const Menu = () => {
 };
 
 export default Menu;
+

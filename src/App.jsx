@@ -3,8 +3,6 @@ import './App.scss'
 import StartPage from './pages/StartPage'
 import Rides from './pages/Rides'
 import Games from './pages/Games'
-import Kladd from './pages/kladd'
-
 
 function App() {
     
@@ -15,7 +13,6 @@ function App() {
                 <Route path='/' element={<StartPage />} />
                 <Route path='/rides' element={<Rides />} />
                 <Route path='/games' element={<Games />} />
-                <Route path='/kladd' element={<Kladd />} />
             </Routes>
         </BrowserRouter>
       </>

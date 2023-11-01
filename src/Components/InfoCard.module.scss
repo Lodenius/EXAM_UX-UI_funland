@@ -19,8 +19,9 @@
         width: 50%;
         height: 15rem;
         text-align: center;
+        @include textFont;
     }
-    &__animation {
+    &__image {
         width: 35%;
         height: 15rem;
         border: 1px solid $blue;
