@@ -7,6 +7,7 @@ function Header() {
 
     return (
         <header className={style.header}>
+                <Menu />
             <section className={style.header__title}>
                 {welcome.map((letter, i) => {
                     return(
@@ -16,7 +17,6 @@ function Header() {
                     )
                 })}
             </section>
-                <Menu />
         </header>
     )
 }

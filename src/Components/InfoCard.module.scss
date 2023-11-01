@@ -35,27 +35,22 @@
 
 @keyframes hoverEffect {
     0% {
-      background-color: $red;
       @include darkShadow;
     }
     25% {
       transform: rotateZ(-.3deg);
-      background-color: $red;
       @include darkShadow;
     }
     50% {
       transform: rotateZ(.3deg);
-      background-color: $red;
       @include darkShadow;
     }
     75% {
       transform: rotateZ(-.3deg);
-      background-color: $red;
       @include darkShadow;
     }
     100% {
       transform: rotateZ(0);
-      background-color: $red;
       @include darkShadow;
     }
   }
