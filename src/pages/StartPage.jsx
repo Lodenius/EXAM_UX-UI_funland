@@ -1,6 +1,6 @@
 import Header from "../Components/Header";
 import LargeCategory from "../Components/LargeCategory";
-import style from './Styling/StartPage.module.scss';
+import Message from "../Components/Message";
 
 function StartPage() {
 
@@ -9,6 +9,7 @@ function StartPage() {
             <Header />
             <h2>Welcome to funland!</h2>
             <LargeCategory />
+            <Message />
         </>
     )
 }

@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     justify-content:space-around;
-    margin: 1rem;
+    margin: 2rem;
     h2 {
         @include Headline;
         color: $blue;
@@ -32,24 +32,13 @@
     animation: hoverEffect .75s ease 1 forwards;
 }
 
+
 @keyframes hoverEffect {
     0% {
       @include darkShadow;
     }
-    25% {
-      transform: rotateZ(-.2deg);
-      @include darkShadow;
-    }
-    50% {
-      transform: rotateZ(.2deg);
-      @include darkShadow;
-    }
-    75% {
-      transform: rotateZ(-.2deg);
-      @include darkShadow;
-    }
     100% {
-      transform: rotateZ(0);
       @include darkShadow;
+      transform: scale(1.03);
     }
   }

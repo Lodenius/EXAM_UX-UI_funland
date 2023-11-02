@@ -2,7 +2,7 @@ import Header from '../Components/Header';
 import TicketCard from '../Components/TicketCard';
 import style from './Styling/Tickets.module.scss';
 
-//pix
+// Imgs
 import oneD from '../assets/tickets/one-day.jpg'
 import twoD from '../assets/tickets/two-day.jpg'
 import threeD from '../assets/tickets/three-day.jpg'

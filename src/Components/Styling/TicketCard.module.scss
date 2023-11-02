@@ -31,7 +31,9 @@
         color: $red;
         font-style: italic;
         cursor: pointer;
-        @include lightShadow;
+    }
+    button:active {
+        transform: scale(.9);
     }
 }
 
@@ -39,4 +41,5 @@
 .ticket:hover {
     @include darkShadow;
     cursor: pointer;
+    transform: scale(1.04);
 }
